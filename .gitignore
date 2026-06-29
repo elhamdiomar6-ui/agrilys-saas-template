@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.DS_Store
+tsconfig.tsbuildinfo
+
+AGADIRNETGUIDA_AUDIT_PACKAGE_2026-05-25.zip
+.env.local
+data-private/
+*_private.csv
+
+.vercel

@@ -1,0 +1,18 @@
+export const siteConfig = {
+  name: import.meta.env.VITE_ASSOCIATION_NAME || 'Registre Communautaire Du Douar',
+  nameAr: import.meta.env.VITE_ASSOCIATION_NAME_AR || 'السجل الجماعي للدوار',
+  place: import.meta.env.VITE_PLACE_NAME || "Agadir n'tguida",
+  placeAr: import.meta.env.VITE_PLACE_NAME_AR || 'أكادير نتكيدا',
+  slug: import.meta.env.VITE_ASSOCIATION_SLUG || 'agadirnetguida',
+  publicUrl: import.meta.env.VITE_PUBLIC_APP_URL || 'https://agadirnetguida.com',
+  officialEmail: import.meta.env.VITE_OFFICIAL_EMAIL || 'agadirnetguida.asso@gmail.com',
+  demoMode: import.meta.env.VITE_DEMO_MODE === 'true',
+  demoPresentation: import.meta.env.VITE_DEMO_PRESENTATION === 'true',
+  adminPinConfigured: Boolean(import.meta.env.VITE_ADMIN_PIN && import.meta.env.VITE_ADMIN_PIN.length >= 4),
+  internalModulesEnabled: import.meta.env.VITE_ENABLE_INTERNAL_MODULES === 'true',
+  siteLockEnabled: import.meta.env.VITE_SITE_LOCK_ENABLED === 'true',
+  siteLockPasswordHash: import.meta.env.VITE_SITE_LOCK_PASSWORD_HASH?.trim() || '',
+  siteLockPassword: import.meta.env.VITE_SITE_LOCK_PASSWORD?.trim() || '',
+  siteLockSessionHours: Number(import.meta.env.VITE_SITE_LOCK_SESSION_HOURS || 12),
+  isDevelopment: import.meta.env.DEV,
+} as const;

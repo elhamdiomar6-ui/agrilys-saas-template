@@ -1,0 +1,119 @@
+{
+  "points_interet": [
+    {
+      "id": "LOC_MOSQUEE_002",
+      "nom_local": "Timzgida Taqbourt",
+      "nom_arabe": "المسجد القديم والمدرسة",
+      "nom_amazigh": "ⵜⵉⵎⵣⴳⵉⴷⴰ ⵜⴰⵇⴱⵓⵔⵜ",
+      "categorie": "Spiritualité & Éducation",
+      "niveau_interet": "fort",
+      "visitable": true,
+      "distance_approx_metres": 50,
+      "coordonnees": {
+        "latitude": 29.346820,
+        "longitude": -9.289150
+      },
+      "images": [
+        "assets/images/patrimoine/timzgida_taqbourt.jpg"
+      ],
+      "histoire": {
+        "fr": "Centre spirituel historique du village qui abritait l'ancienne école coranique pour l'apprentissage des enfants.",
+        "darija": "الجامع القديم والمدرسة فين كانوا ولاد الدوار كيقراو ويكتبوا القران وكيتعلموا القواعد الأولى ديال الدين.",
+        "tachelhit": "ⵜⵉⵎⵣⴳⵉⴷⴰ ⵜⴰⵇⴱⵓⵔⵜ ⴷ ⵜⵉⵏⵎⵍ ⵍⵍⵉ ⴳ ⵜⵜⵉⵏⵉⵏ ⵉⴼⵔⵅⴰⵏ ⵇⵇⵓﺮⴰⵏ ⴷ ⵜⵉⵔⵔⴰ ⴳ ⵓⵣⵎⵣ ⵉⵣⵔⵉⵏ."
+      },
+      "risques": ["Toiture ancienne, prudence à l'intérieur."]
+    },
+    {
+      "id": "LOC_PUITS_003",
+      "nom_local": "Tanout / Aghbalou",
+      "nom_arabe": "البير التقليدي",
+      "nom_amazigh": "ⵜⴰⵏⵓⵜ / ⴰⵖⴱⴰⵍⵓ",
+      "categorie": "Ressources vitales",
+      "niveau_interet": "fort",
+      "visitable": true,
+      "distance_approx_metres": 150,
+      "coordonnees": {
+        "latitude": 29.345850,
+        "longitude": -9.289620
+      },
+      "images": [
+        "assets/images/patrimoine/tanout_aghbalou.jpg"
+      ],
+      "histoire": {
+        "fr": "Le puits historique indispensable qui assurait l'approvisionnement en eau potable de tout le ksar.",
+        "darija": "البير القديم اللي كان هو الروح ديال الدوار، منه كانوا الناس والعيالات كيجيبوا الما باش يعيشوا.",
+        "tachelhit": "ⵜⴰⵏⵓⵜ ⵍⵍⵉ ⵣⴳ ⴷⴰ ⵜⵜⴰⴳⵎⵏ ⵉⵎⵣⴷⴰⵖ ⴰⵎⴰⵏ ⵉⵎⴰⵏ ⴱⴰⵛ ⴰⴷ ⴷⴷⵔⵏ ⴳ ⵓⴼⵍﻠا ⵏ ⵓⴷⵔⴰⵔ."
+      },
+      "risques": ["Risque de chute, garder la grille fermée."]
+    },
+    {
+      "id": "LOC_PORTE_004",
+      "nom_local": "Tagourt n'Oughrem",
+      "nom_arabe": "باب القصر القديم",
+      "nom_amazigh": "ⵜⴰⴳⵓⵔⵜ ⵏ ⵓⵖⵔⵎ",
+      "categorie": "Architecture",
+      "niveau_interet": "moyen",
+      "visitable": true,
+      "distance_approx_metres": 30,
+      "coordonnees": {
+        "latitude": 29.347120,
+        "longitude": -9.289350
+      },
+      "images": [
+        "assets/images/patrimoine/tagourt_noughrem.jpg"
+      ],
+      "histoire": {
+        "fr": "Ancienne porte fortifiée qui sécurisait l'accès des habitants à l'intérieur des remparts du ksar.",
+        "darija": "الباب الكبيرة ديال القصر اللي كانت كتسد بالليل باش تحمي الناس من الخوف ومن الشفارة.",
+        "tachelhit": "ⵜⴰଗⵓⵔⵜ ⵍⵍⵉ ⴷⴰ ⵉⵜⵜⵔⴳⴰⵍⵏ ⵙ ⵜⴳⴹⵡⵉن ⴱⴰⵛ ⴰⴷ ⵓري ⴽⵛⵎⵏ ⵉⵎⵛⵓⵎⵏ ⵙ ⵓⵖⵔⵎ."
+      },
+      "risques": ["Passage escarpé sur les pierres."]
+    },
+    {
+      "id": "LOC_BATTAGE_005",
+      "nom_local": "Anrar",
+      "nom_arabe": "المنـدر (نادر الشعير)",
+      "nom_amazigh": "ⴰⵏⵔⴰⵔ",
+      "categorie": "Agriculture",
+      "niveau_interet": "moyen",
+      "visitable": true,
+      "distance_approx_metres": 100,
+      "coordonnees": {
+        "latitude": 29.346510,
+        "longitude": -9.288400
+      },
+      "images": [
+        "assets/images/patrimoine/anrar_battage.jpg"
+      ],
+      "histoire": {
+        "fr": "Espace de battage collectif de l'orge, symbole du travail de solidarité (Twiza) après les récoltes.",
+        "darija": "الـنادر فين كانت العائلات كتجمع وتدرس الشعير بالدواب باش تعزل الزرع على التبن فيام الصيف.",
+        "tachelhit": "ⴰⵏⵔⴰⵔ ⵍⵍⵉ ⴳ ⴷⴰ ⵜⵜⵎⵢⴰⵡⴰⵙⵏ ⵉⵎⵣⴷⴰⵖ ⴳ ⵓⵣⵎⵣ ⵏ ⵜⵎⴳⵔⴰ ⴷ ⵓⴼⵔⴰ ⵏ ⵓⵎⵣⵉⵏ."
+      },
+      "risques": ["Aucun risque particulier."]
+    },
+    {
+      "id": "LOC_ASSOCIATION_006",
+      "nom_local": "Timskert n'Association",
+      "nom_arabe": "مقر الجمعية والمدرسة الجديدة",
+      "nom_amazigh": "ⵜⵉⵎⵙⴽⵔⵜ ⵏ ⵓⵎⵎⴰⵙ",
+      "categorie": "Développement local",
+      "niveau_interet": "moyen",
+      "visitable": true,
+      "distance_approx_metres": 200,
+      "coordonnees": {
+        "latitude": 29.347650,
+        "longitude": -9.287800
+      },
+      "images": [
+        "assets/images/patrimoine/siege_association.jpg"
+      ],
+      "histoire": {
+        "fr": "Le bâtiment moderne dédié à l'alphabétisation, aux cours de soutien et à la gestion des projets du village.",
+        "darija": "المقر الجديد ديال الجمعية فين كيداروا الاجتماعات وتدريس النساء ومشاريع التنمية ديال الدوار.",
+        "tachelhit": "ⴰⵎⵎⴰⵙ ⵏ ⵜⵎⵙⴽⵔⵜ ⵍⵍⵉ ⴳ ⴷⴰ ⵜⵜⵎⵢⴰⵡⴰⴷⵏ ⵉⵎⵣⴷⴰⵖ ⴼ ⵉⵙնⴼⴰⵔⵏ ⵏ ⵡⴰⵎⴰⵏ ⴷ ⵜⵉⴼⴰⵡⵜ."
+      },
+      "risques": ["Aucun risque particulier."]
+    }
+  ]
+}
