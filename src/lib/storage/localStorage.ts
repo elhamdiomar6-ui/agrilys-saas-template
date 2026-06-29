@@ -1,4 +1,5 @@
 import { siteConfig } from '../../config/site';
+import { getStorageKey } from './storageUtils';
 
 export type RegistrationHistoryItem = {
   status: RequestDecision;
@@ -31,9 +32,9 @@ export type GeneratedPinNotice = {
   displayExpiresAt: string;
 };
 
-const siteLockStorageKey = 'agadirnetguida.siteLock.unlocked.v1';
-const requestStorageKey = 'agadirnetguida.registrationRequests.v2';
-const generatedPinsStorageKey = 'agadirnetguida.generatedPins.v1';
+const siteLockStorageKey = getStorageKey('siteLock.unlocked', 'v1');
+const requestStorageKey = getStorageKey('registrationRequests', 'v2');
+const generatedPinsStorageKey = getStorageKey('generatedPins', 'v1');
 export const generatedPinRetentionMs = 5 * 60 * 1000;
 
 export function readGeneratedPinNotices() {
