@@ -1,7 +1,8 @@
 import type { CotisationImamHousehold } from '../types/cotisationImam';
 import { statsCotisationUpdatedEvent } from '../components/StatsCotisation';
 
-export const cotisationImamStorageKey = 'agadirnetguida.cotisationImam.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const cotisationImamStorageKey = getStorageKey('cotisationImam', 'v1');
 export const cotisationImamStatsStorageKey = 'agadir_cotisations_imam';
 
 function syncCotisationStatsStorage(households: CotisationImamHousehold[]) {

@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useAuth } from '../../lib/auth/supabaseAuth';
 import type { AgentId, OrchidMessage } from '../../types/orchid';
 import { AGENTS, detectAgent, getAgent } from './agents';
+import { getStorageKey } from '../../lib/storage/storageUtils';
 
-const storageKey = 'agadirnetguida.orchid.demo.sessions.v1';
+const storageKey = getStorageKey('orchid.demo.sessions', 'v1');
 
 type SessionMap = Record<AgentId, OrchidMessage[]>;
 type Mode = 'demo' | 'live';

@@ -1,6 +1,7 @@
 ﻿import type { PublicDocument } from '../types/publicDocument';
 
-export const publicDocumentsStorageKey = 'agadirnetguida.publicDocuments.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const publicDocumentsStorageKey = getStorageKey('publicDocuments', 'v1');
 
 export const initialPublicDocuments: PublicDocument[] = [
   {

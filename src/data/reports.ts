@@ -1,6 +1,7 @@
 ﻿import type { ResidentReport } from '../types/report';
 
-export const reportsStorageKey = 'agadirnetguida.residentReports.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const reportsStorageKey = getStorageKey('residentReports', 'v1');
 
 export function readReports(): ResidentReport[] {
   const stored = localStorage.getItem(reportsStorageKey);

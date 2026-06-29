@@ -1,6 +1,7 @@
 import type { CommunityEvent } from '../types/events';
 
-export const eventsStorageKey = 'agadirnetguida.events.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const eventsStorageKey = getStorageKey('events', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -17,7 +18,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'reunion',
     status: 'planned',
     importance: 'important',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     internalNote: 'Ordre du jour : gestion de l\'eau, projets de développement, entraide.',
     published: true,
     createdAt: NOW,
@@ -35,7 +36,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'feteLocale',
     status: 'planned',
     importance: 'important',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     internalNote: 'Coordination avec diaspora pour participation à distance.',
     published: true,
     createdAt: NOW,
@@ -53,7 +54,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'nettoyage',
     status: 'planned',
     importance: 'normal',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     internalNote: 'Implication des familles et des jeunes.',
     published: true,
     createdAt: NOW,

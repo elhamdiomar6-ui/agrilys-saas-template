@@ -162,7 +162,7 @@ export default function HomePage({ lang, t: propsT, onInscription, onResident, o
 
       <div style={{ textAlign: 'center', margin: '24px 0' }}>
         <a
-          href="mailto:agadirnetguida.asso@gmail.com?subject=Soutien%20au%20douar%20Agadir%20N%27Tguida"
+          href={`mailto:${siteConfig.officialEmail}?subject=Support%20${encodeURIComponent(siteConfig.slug)}`}
           style={{
             display: 'inline-block',
             background: '#2E7D32',

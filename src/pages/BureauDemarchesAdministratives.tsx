@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { readAdministrativeProcedures, saveAdministrativeProcedures } from '../data/internalOperations';
 import type { AdministrativeProcedure } from '../types/internalOperations';
 import InternalOperationsWorkspace, { WorkspaceField, WorkspaceFilter, WorkspaceOption } from './InternalOperationsWorkspace';
@@ -79,7 +80,7 @@ export default function BureauDemarchesAdministrativesPage({ lang, onBack }: { l
     requiredMessage={{ fr: 'Titre, organisme, type, statut, responsable, priorité et prochaine action sont obligatoires.', ar: 'العنوان والمؤسسة والنوع والحالة والمسؤول والأولوية والإجراء المقبل ضرورية.' }}
     confirmDelete={{ fr: 'Supprimer cette démarche temporaire ? Aucun courrier réel ne sera supprimé.', ar: 'هل تريد حذف هذا الإجراء المؤقت؟ لن يتم حذف أي وثيقة حقيقية.' }}
     scriptId="bureau-demarches"
-    filenameBase="agadirnetguida-demarches-administratives"
+    filenameBase={`${siteConfig.slug}-demarches-administratives`}
     idPrefix="PROC"
     fields={fields}
     filters={filters}

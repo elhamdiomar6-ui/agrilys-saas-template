@@ -1,6 +1,7 @@
 import type { AssociationRenewalItem } from '../types/associationRenewal';
 
-export const associationRenewalStorageKey = 'agadirnetguida.associationRenewal.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const associationRenewalStorageKey = getStorageKey('associationRenewal', 'v1');
 
 const today = new Date().toISOString().slice(0, 10);
 

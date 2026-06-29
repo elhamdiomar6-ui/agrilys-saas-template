@@ -1,6 +1,7 @@
 ﻿import type { PublicAnnouncement } from '../types/announcement';
 
-export const announcementsStorageKey = 'agadirnetguida.publicAnnouncements.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const announcementsStorageKey = getStorageKey('publicAnnouncements', 'v1');
 
 export const initialPublicAnnouncements: PublicAnnouncement[] = [
   {

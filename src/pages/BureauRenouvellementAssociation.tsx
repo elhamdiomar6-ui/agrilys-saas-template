@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { ArrowLeft, CheckCircle2, Download, FileText, Pencil, Plus, Search, ShieldCheck, Trash2 } from 'lucide-react';
 import { FormEvent, useMemo, useState } from 'react';
 import AudioHelp from '../components/AudioHelp';
@@ -265,7 +266,7 @@ export default function BureauRenouvellementAssociationPage({ lang, onBack }: { 
   };
 
   const exportJson = () => {
-    downloadText('agadirnetguida-renouvellement-association.json', JSON.stringify(items, null, 2), 'application/json;charset=utf-8');
+    downloadText(`${siteConfig.slug}-renouvellement-association.json`, JSON.stringify(items, null, 2), 'application/json;charset=utf-8');
   };
 
   const exportCsv = () => {
@@ -281,7 +282,7 @@ export default function BureauRenouvellementAssociationPage({ lang, onBack }: { 
       item.physicalLocation,
       item.notes,
     ].map(csvEscape).join(','));
-    downloadText('agadirnetguida-renouvellement-association.csv', [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
+    downloadText(`${siteConfig.slug}-renouvellement-association.csv`, [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
   };
 
   return (

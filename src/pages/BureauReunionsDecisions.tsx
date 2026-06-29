@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { readMeetingDecisionRecords, saveMeetingDecisionRecords } from '../data/internalOperations';
 import type { MeetingDecisionRecord } from '../types/internalOperations';
 import InternalOperationsWorkspace, { WorkspaceField, WorkspaceFilter, WorkspaceOption } from './InternalOperationsWorkspace';
@@ -56,7 +57,7 @@ export default function BureauReunionsDecisionsPage({ lang, onBack }: { lang: La
     requiredMessage={{ fr: 'Réunion, date, lieu, objet, actions, responsable et statut PV sont obligatoires.', ar: 'الاجتماع والتاريخ والمكان والموضوع والأعمال والمسؤول وحالة المحضر ضرورية.' }}
     confirmDelete={{ fr: 'Supprimer cette réunion temporaire ? Aucun PV réel ne sera supprimé.', ar: 'هل تريد حذف هذا الاجتماع المؤقت؟ لن يتم حذف أي محضر حقيقي.' }}
     scriptId="bureau-reunions"
-    filenameBase="agadirnetguida-reunions-pv-decisions"
+    filenameBase={`${siteConfig.slug}-reunions-pv-decisions`}
     idPrefix="MEET"
     fields={fields}
     filters={filters}

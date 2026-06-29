@@ -1,6 +1,7 @@
 import type { InternalContact } from '../types/contactsAuthorities';
 
-export const contactsAuthoritiesStorageKey = 'agadirnetguida.contactsAuthorities.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const contactsAuthoritiesStorageKey = getStorageKey('contactsAuthorities', 'v1');
 
 const today = new Date().toISOString().slice(0, 10);
 

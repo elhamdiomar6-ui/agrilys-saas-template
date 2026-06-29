@@ -1,10 +1,11 @@
 import type { ActionPlanItem, AdministrativeProcedure, FieldCollectionItem, InternalTask, MeetingDecisionRecord } from '../types/internalOperations';
 
-export const internalTasksStorageKey = 'agadirnetguida.internalTasks.v1';
-export const administrativeProceduresStorageKey = 'agadirnetguida.administrativeProcedures.v1';
-export const meetingDecisionRecordsStorageKey = 'agadirnetguida.meetingDecisionRecords.v1';
-export const fieldCollectionStorageKey = 'agadirnetguida.fieldCollection.v1';
-export const actionPlanStorageKey = 'agadirnetguida.actionPlan.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const internalTasksStorageKey = getStorageKey('internalTasks', 'v1');
+export const administrativeProceduresStorageKey = getStorageKey('internalTasks', 'v1');
+export const meetingDecisionRecordsStorageKey = getStorageKey('internalTasks', 'v1');
+export const fieldCollectionStorageKey = getStorageKey('internalTasks', 'v1');
+export const actionPlanStorageKey = getStorageKey('internalTasks', 'v1');
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -78,7 +79,7 @@ export const initialMeetingDecisionRecords: MeetingDecisionRecord[] = [
 export const initialFieldCollectionItems: FieldCollectionItem[] = [
   {
     id: 'COLLECT-DEMO-1',
-    title: 'Photo réelle du grenier collectif',
+    title: 'Photo réelle du <CULTURAL_HERITAGE>,
     category: 'heritage_photos',
     linkedPlace: 'Agadir n’Tguida',
     status: 'to_collect',
@@ -107,7 +108,7 @@ export const initialFieldCollectionItems: FieldCollectionItem[] = [
 export const initialActionPlanItems: ActionPlanItem[] = [
   {
     id: 'ACTION-001',
-    title: "[FAIT] Creer l'association ANATDC (Dahir 1.58.376)",
+    title: "[FAIT] Creer l'association <ORGANIZATION_NAME> (Dahir 1.58.376)",
     status: 'complete',
     priority: 'normal',
     dueDate: '2026-01-01',
@@ -143,7 +144,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
   },
   {
     id: 'ACTION-004',
-    title: '[FAIT] Deployer agadirnetguida.com en production',
+    title: '[FAIT] Deployer <DOMAIN> en production',
     status: 'complete',
     priority: 'normal',
     dueDate: '2026-06-09',
@@ -159,7 +160,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'complete',
     priority: 'normal',
     dueDate: '2026-06-01',
-    description: 'Descriptions fr/ar/amazigh - Grenier Collectif Tguida inclus.',
+    description: 'Descriptions fr/ar/amazigh - <CULTURAL_HERITAGE>.',
     responsible: 'Commission patrimoine',
     tags: 'patrimoine',
     notes: '',
@@ -195,7 +196,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'todo',
     priority: 'urgent',
     dueDate: '2026-06-20',
-    description: 'Projet : amenagement Grenier Collectif Tguida - signaletique + acces. Montant cible : 50 000-150 000 MAD.',
+    description: 'Projet : amenagement <CULTURAL_HERITAGE>. Montant cible : 50 000-150 000 MAD.',
     responsible: 'President / secretaire',
     tags: 'subventions',
     notes: '',
@@ -231,7 +232,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'todo',
     priority: 'high',
     dueDate: '2026-07-05',
-    description: 'Processus validation 3-4 semaines - preparer histoire ANATDC + visuels Grenier Tguida.',
+    description: 'Processus validation 3-4 semaines - preparer histoire <ORGANIZATION_NAME> + visuels <CULTURAL_HERITAGE>.',
     responsible: 'President / diaspora',
     tags: 'subventions,diaspora',
     notes: '',
@@ -255,7 +256,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'todo',
     priority: 'normal',
     dueDate: '2026-07-20',
-    description: 'Objectif : 20 000 MAD - video courte Grenier Tguida + story ANATDC.',
+    description: 'Objectif : 20 000 MAD - video courte <CULTURAL_HERITAGE>.',
     responsible: 'Commission diaspora',
     tags: 'diaspora,financement',
     notes: '',
@@ -311,7 +312,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
   },
   {
     id: 'ACTION-018',
-    title: 'Amenager acces et signaletique Grenier Collectif Tguida',
+    title: 'Amenager acces et signaletique <CULTURAL_HERITAGE>,
     status: 'todo',
     priority: 'high',
     dueDate: '2026-08-15',
@@ -363,7 +364,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'in_progress',
     priority: 'urgent',
     dueDate: '2026-06-20',
-    description: 'Finaliser le dossier INDH pour l amenagement du Grenier Collectif Tguida : acces, signaletique, budget et pieces justificatives.',
+    description: 'Finaliser le dossier INDH pour l amenagement du <CULTURAL_HERITAGE>, signaletique, budget et pieces justificatives.',
     responsible: 'President / bureau',
     tags: 'subventions,patrimoine,INDH',
     notes: '',
@@ -387,7 +388,7 @@ export const initialActionPlanItems: ActionPlanItem[] = [
     status: 'todo',
     priority: 'high',
     dueDate: '2026-07-01',
-    description: 'Partager lien agadirnetguida.com - objectif : 30 membres MRE inscrits.',
+    description: 'Partager lien <DOMAIN> - objectif : 30 membres MRE inscrits.',
     responsible: 'Commission diaspora',
     tags: 'plateforme,diaspora',
     notes: '',

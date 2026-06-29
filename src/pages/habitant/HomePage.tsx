@@ -2,6 +2,7 @@ import { ArrowLeft, Clock3, Home, Info, LockKeyhole, Phone, ShieldCheck } from '
 import type { ReactNode } from 'react';
 import { useAuth } from '../../lib/auth/supabaseAuth';
 import HabitantPersonalDashboard from '../../components/HabitantPersonalDashboard';
+import { getStorageKey } from '../../lib/storage/storageUtils';
 import type { UserRole } from '../../types/roles';
 
 type Lang = 'fr' | 'ar';
@@ -38,7 +39,7 @@ type RegistrationRequest = {
   history?: RegistrationHistoryItem[];
 };
 
-const requestStorageKey = 'agadirnetguida.registrationRequests.v2';
+const requestStorageKey = getStorageKey('registrationRequests', 'v2');
 
 const text = {
   fr: {

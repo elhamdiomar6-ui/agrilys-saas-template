@@ -1,6 +1,7 @@
 import type { AssociationMember } from '../types/members';
 
-export const membersStorageKey = 'agadirnetguida.members.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const membersStorageKey = getStorageKey('members', 'v1');
 
 export const officialBureauMembers: AssociationMember[] = [
   {

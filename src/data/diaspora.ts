@@ -1,6 +1,7 @@
 import type { DiasporaInitiative } from '../types/diaspora';
 
-export const diasporaStorageKey = 'agadirnetguida.diaspora.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const diasporaStorageKey = getStorageKey('diaspora', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -16,7 +17,7 @@ const initialDiasporaInitiatives: DiasporaInitiative[] = [
     status: 'active',
     region: 'France, Belgique, Italie, Espagne',
     date: '2026-02-01',
-    internalNote: 'Réseau de contact diaspora maintenu par ANATDC. Assistance documentaire et accompagnement.',
+    internalNote: 'Réseau de contact diaspora maintenu par l\'organisation. Assistance documentaire et accompagnement.',
     published: true,
     createdAt: NOW,
     updatedAt: NOW,

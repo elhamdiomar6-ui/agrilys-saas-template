@@ -8,6 +8,7 @@ import { readOralMemoryStories } from '../data/oralMemory';
 import { readPublicDocuments } from '../data/publicDocuments';
 import { readReports } from '../data/reports';
 import { readTimelineEvents } from '../data/timeline';
+import { getStorageKey } from '../lib/storage/storageUtils';
 
 type Lang = 'fr' | 'ar';
 type StatScope = 'all' | 'public' | 'internal';
@@ -76,7 +77,7 @@ const copy: Record<Lang, Copy> = {
   },
 };
 
-const registrationStorageKey = 'agadirnetguida.registrationRequests.v2';
+const registrationStorageKey = getStorageKey('registrationRequests', 'v2');
 
 type RegistrationRequestSnapshot = { id: string };
 

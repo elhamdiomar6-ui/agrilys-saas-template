@@ -1,6 +1,7 @@
 ﻿import type { CommunityProject } from '../types/projects';
 
-export const projectsStorageKey = 'agadirnetguida.projects.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const projectsStorageKey = getStorageKey('projects', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 

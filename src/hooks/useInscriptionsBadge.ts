@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
 import type { UserRole } from '../types/roles';
+import { getStorageKey } from '../lib/storage/storageUtils';
 
-const BUREAU_SEEN_KEY = 'agadirnetguida.bureau.inscriptions.lastSeenAt';
-const PRESIDENT_SEEN_KEY = 'agadirnetguida.president.inscriptions.lastSeenAt';
+const BUREAU_SEEN_KEY = getStorageKey('bureau.inscriptions.lastSeenAt', 'v1');
+const PRESIDENT_SEEN_KEY = getStorageKey('president.inscriptions.lastSeenAt', 'v1');
 
 export function useInscriptionsBadge(role: UserRole | null) {
   const [badge, setBadge] = useState(0);

@@ -1,6 +1,7 @@
 import type { AgricultureInitiative } from '../types/agriculture';
 
-export const agricultureStorageKey = 'agadirnetguida.agriculture.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const agricultureStorageKey = getStorageKey('agriculture', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -15,7 +16,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'oliviers',
     status: 'active',
     date: '2026-03-15',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Documentation en cours avec experts régionaux.',
     published: true,
     createdAt: NOW,
@@ -31,7 +32,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'irrigation',
     status: 'active',
     date: '2026-02-10',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Réunions mensuelles de coordination. Respect des droits d\'eau traditionnels.',
     published: true,
     createdAt: NOW,
@@ -47,7 +48,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'reboisement',
     status: 'preparing',
     date: '2026-05-01',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Plans d\'aménagement finalisés. Lancement automne 2026.',
     published: true,
     createdAt: NOW,

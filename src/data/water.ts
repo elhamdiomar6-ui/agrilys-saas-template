@@ -1,6 +1,7 @@
 import type { WaterInformation } from '../types/water';
 
-export const waterStorageKey = 'agadirnetguida.water.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const waterStorageKey = getStorageKey('water', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -15,7 +16,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'maintenance',
     status: 'normal',
     date: '2026-04-10',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Cycle d\'entretien trimestriel. Mobilisation familiale.',
     published: true,
     createdAt: NOW,
@@ -31,7 +32,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'qualiteEau',
     status: 'normal',
     date: '2026-01-15',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Tests semestriels avec laboratoire régional.',
     published: true,
     createdAt: NOW,
@@ -47,7 +48,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'projetHydraulique',
     status: 'project',
     date: '2026-06-01',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     internalNote: 'Étude technique et consultation communautaire en cours.',
     published: true,
     createdAt: NOW,

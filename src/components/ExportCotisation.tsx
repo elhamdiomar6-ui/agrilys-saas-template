@@ -1,3 +1,5 @@
+import { getStorageKey } from '../lib/storage/storageUtils';
+
 type CotisationStatus = 'a_jour' | 'en_retard' | 'exonere' | 'a_verifier';
 
 type ExportableFoyerCotisant = {
@@ -12,7 +14,7 @@ type ExportableFoyerCotisant = {
 };
 
 const preferredStorageKeys = [
-  'agadirnetguida.cotisationImam.v1',
+  getStorageKey('cotisationImam', 'v1'),
   'agadir_cotisations_imam',
 ];
 

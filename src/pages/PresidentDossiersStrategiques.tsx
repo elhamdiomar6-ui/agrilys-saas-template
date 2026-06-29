@@ -1,5 +1,6 @@
 import { ArrowLeft, CheckCircle2, Clock4, FileText, ShieldCheck, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
+import { siteConfig } from '../config/site';
 import {
   readFinancingRecords,
   readInternationalStatusRecords,
@@ -18,7 +19,7 @@ import {
 const copy = {
   fr: {
     back: 'Retour',
-    title: 'Dossiers Stratégiques ANATDC',
+    title: `Dossiers Stratégiques ${siteConfig.name}`,
     intro: 'Tableau de bord de traçabilité complète : financements, statuts internationaux et courriers officiels.',
     warning: 'Données locales - À synchroniser avec Supabase après validation.',
 
@@ -56,7 +57,7 @@ const copy = {
   },
   ar: {
     back: 'رجوع',
-    title: 'الملفات الاستراتيجية ANATDC',
+    title: `الملفات الاستراتيجية ${siteConfig.nameAr}`,
     intro: 'لوحة متابعة شاملة: التمويلات والحالات الدولية والمراسلات الرسمية.',
     warning: 'معطيات محلية - تنسيق مع Supabase بعد التحقق.',
 

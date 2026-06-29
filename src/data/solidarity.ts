@@ -1,6 +1,7 @@
 import type { SolidarityAction } from '../types/solidarity';
 
-export const solidarityStorageKey = 'agadirnetguida.solidarity.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const solidarityStorageKey = getStorageKey('solidarity', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -14,7 +15,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-familiale',
     category: 'solidarite',
     status: 'active',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     date: '2026-01-10',
     internalNote: 'Fonds de solidarité géré collectivement. Interventions rapides.',
     published: true,
@@ -30,7 +31,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-sante',
     category: 'sante',
     status: 'active',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     date: '2026-02-15',
     internalNote: 'Partenariat avec infirmière régionale. Campagnes semestrielles.',
     published: true,
@@ -46,7 +47,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-alimentaire',
     category: 'alimentation',
     status: 'preparing',
-    organizer: 'ANATDC',
+    organizer: '' // Client-specific,
     date: '2026-05-20',
     internalNote: 'Stock préparé. Distribution prévue avant soudure estivale.',
     published: true,

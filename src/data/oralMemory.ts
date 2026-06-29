@@ -1,6 +1,7 @@
 ﻿import type { OralMemoryStory } from '../types/oralMemory';
 
-export const oralMemoryStorageKey = 'agadirnetguida.oralMemory.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const oralMemoryStorageKey = getStorageKey('oralMemory', 'v1');
 
 export function readOralMemoryStories(): OralMemoryStory[] {
   const stored = localStorage.getItem(oralMemoryStorageKey);

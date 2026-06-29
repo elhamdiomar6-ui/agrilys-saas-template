@@ -3,12 +3,13 @@ import { FormEvent, useMemo, useState } from 'react';
 import AudioHelp from '../../components/AudioHelp';
 import { siteConfig } from '../../config/site';
 import { createRegistrationRequest } from '../../lib/mvpSupabase';
+import { getStorageKey } from '../../lib/storage/storageUtils';
 
 type Lang = 'fr' | 'ar';
 type TextBundle = { [K in keyof (typeof text)['fr']]: string } & { supportDouar: string };
 type RequestedStatus = 'habitant' | 'adherent' | 'soutien';
 
-const requestStorageKey = 'agadirnetguida.registrationRequests.v2';
+const requestStorageKey = getStorageKey('registrationRequests', 'v2');
 
 const text = {
   fr: {

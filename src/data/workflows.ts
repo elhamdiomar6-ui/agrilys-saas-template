@@ -8,8 +8,9 @@ type RegistrationRequestSnapshot = {
   status: 'pending' | 'accepted' | 'rejected';
 };
 
-export const workflowsStorageKey = 'agadirnetguida.validationWorkflows.v1';
-const registrationStorageKey = 'agadirnetguida.registrationRequests.v2';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const workflowsStorageKey = getStorageKey('validationWorkflows', 'v1');
+const registrationStorageKey = getStorageKey('registrationRequests', 'v2');
 
 function readStoredWorkflows(): ValidationWorkflow[] {
   const stored = localStorage.getItem(workflowsStorageKey);

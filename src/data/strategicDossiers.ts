@@ -1,4 +1,4 @@
-// Strategic dossiers tracking for ANATDC
+// Strategic dossiers tracking for <ORGANIZATION_NAME>
 
 export type FinancingStatus = 'envoyé' | 'en attente' | 'réponse' | 'accordé' | 'refusé';
 export type EmailStatus = 'envoyé' | 'réponse reçue' | 'relance' | 'accordé' | 'refusé';
@@ -181,7 +181,7 @@ const defaultEmails: EmailRecord[] = [
     id: 'email-ocp',
     funder: 'OCP Foundation',
     email: 'contact@ocpfoundation.org',
-    emailSubject: 'Patrimoine Amazigh Vivant – Grenier Collectif ANATDC',
+    emailSubject: 'Patrimoine Amazigh Vivant – <CULTURAL_HERITAGE>,
     dateSent: '2026-06-27',
     status: 'envoyé',
     nextActionDate: addDays('2026-06-27', 7),
@@ -191,7 +191,7 @@ const defaultEmails: EmailRecord[] = [
     id: 'email-bmce',
     funder: 'BMCE Foundation',
     email: 'fondation@bmce.ma',
-    emailSubject: 'Inclusion Financière Féminine – Grenier Collectif ANATDC',
+    emailSubject: 'Inclusion Financière Féminine – <CULTURAL_HERITAGE>,
     dateSent: '2026-06-27',
     status: 'envoyé',
     nextActionDate: addDays('2026-06-27', 7),

@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { ArrowLeft, Download, ShieldCheck, Trash2 } from 'lucide-react';
 import AudioHelp from '../components/AudioHelp';
 import { associationRenewalStorageKey, initialAssociationRenewalItems } from '../data/associationRenewal';
@@ -75,12 +76,12 @@ export default function BureauSauvegardeLocalePage({ lang, onBack }: { lang: Lan
   const t = copy[lang];
 
   const exportSource = (source: BackupSource) => {
-    downloadText(`agadirnetguida-${source.filename}.json`, JSON.stringify(readSource(source), null, 2), 'application/json;charset=utf-8');
+    downloadText(`${siteConfig.slug}-${source.filename}.json`, JSON.stringify(readSource(source), null, 2), 'application/json;charset=utf-8');
   };
 
   const exportGlobal = () => {
     const payload = Object.fromEntries(sources.map((source) => [source.filename, readSource(source)]));
-    downloadText('agadirnetguida-sauvegarde-locale-globale.json', JSON.stringify({ exportedAt: new Date().toISOString(), payload }, null, 2), 'application/json;charset=utf-8');
+    downloadText(`${siteConfig.slug}-sauvegarde-locale-globale.json`, JSON.stringify({ exportedAt: new Date().toISOString(), payload }, null, 2), 'application/json;charset=utf-8');
   };
 
   const clearTestData = () => {

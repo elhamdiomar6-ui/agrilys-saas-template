@@ -5,6 +5,7 @@ import WhatsAppMessageCard from '../../components/WhatsAppMessageCard';
 import PinConfirmationModal from '../../components/PinConfirmationModal';
 import { approveHabitantRequest, rejectHabitantRequest, recommendHabitantRequest } from '../../lib/habitants';
 import { fetchRegistrationRequests, createRegistrationRequest } from '../../lib/mvpSupabase';
+import { getStorageKey } from '../../lib/storage/storageUtils';
 import type { UserRole } from '../../types/roles';
 
 type Lang = 'fr' | 'ar';
@@ -40,8 +41,8 @@ type GeneratedPinNotice = {
   displayExpiresAt: string;
 };
 
-const requestStorageKey = 'agadirnetguida.registrationRequests.v2';
-const generatedPinsStorageKey = 'agadirnetguida.generatedPins.v1';
+const requestStorageKey = getStorageKey('registrationRequests', 'v2');
+const generatedPinsStorageKey = getStorageKey('generatedPins', 'v1');
 const generatedPinRetentionMs = 5 * 60 * 1000;
 
 const text = {

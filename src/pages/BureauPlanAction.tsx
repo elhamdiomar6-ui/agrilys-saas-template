@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { ArrowLeft, CheckCircle2, Clock3, Download, Pencil, Plus, Search, ShieldCheck, Trash2 } from 'lucide-react';
 import { FormEvent, useMemo, useRef, useState } from 'react';
 import AudioHelp from '../components/AudioHelp';
@@ -27,7 +28,7 @@ const copy = {
   fr: {
     back: 'Retour',
     title: 'Plan action association',
-    intro: 'Suivi interne ANATDC / AGADIRNETGUIDA : urgences, financements, patrimoine, cooperative, tourisme et plateforme.',
+    intro: 'Suivi interne : urgences, financements, patrimoine, cooperative, tourisme et plateforme.',
     warning: 'Module interne Bureau / President. Les actions restent locales sur cet appareil tant que la synchronisation partagee n est pas activee.',
     total: 'Total actions',
     urgent: 'Urgentes',
@@ -250,12 +251,12 @@ export default function BureauPlanActionPage({ lang, onBack }: { lang: Lang; onB
     if (editingId === id) resetForm();
   };
 
-  const exportJson = () => downloadText('agadirnetguida-plan-action-association.json', JSON.stringify(items, null, 2), 'application/json;charset=utf-8');
+  const exportJson = () => downloadText(`${siteConfig.slug}-plan-action-association.json`, JSON.stringify(items, null, 2), 'application/json;charset=utf-8');
 
   const exportCsv = () => {
     const header = ['title', 'status', 'priority', 'dueDate', 'responsible', 'tags', 'description', 'notes'];
     const rows = items.map((item) => header.map((key) => csvEscape(String(item[key as keyof ActionPlanItem] || ''))).join(','));
-    downloadText('agadirnetguida-plan-action-association.csv', [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
+    downloadText(`${siteConfig.slug}-plan-action-association.csv`, [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
   };
 
   return (

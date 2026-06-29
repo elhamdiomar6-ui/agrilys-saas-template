@@ -1,6 +1,7 @@
 import type { YouthInitiative } from '../types/youth';
 
-export const youthStorageKey = 'agadirnetguida.youth.v3-with-arabic';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const youthStorageKey = getStorageKey('youth', 'v3-with-arabic');
 
 const NOW = '2026-06-22T00:00:00.000Z';
 
@@ -14,7 +15,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-education',
     category: 'education',
     status: 'active',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     date: '2026-01-20',
     internalNote: 'Bénévoles de la communauté. Séances 2-3 fois par semaine.',
     published: true,
@@ -30,7 +31,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-sport',
     category: 'sport',
     status: 'active',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     date: '2026-02-05',
     internalNote: 'Terrains aménagés du douar. Participation libre et gratuite.',
     published: true,
@@ -46,7 +47,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-patrimoine',
     category: 'patrimoine',
     status: 'preparing',
-    responsible: 'ANATDC',
+    responsible: '' // Client-specific,
     date: '2026-06-01',
     internalNote: 'Coordination avec les aînés du douar. Début de saison estivale.',
     published: true,

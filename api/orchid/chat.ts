@@ -105,10 +105,10 @@ Ne melange pas les langues.
   return '';
 }
 
-const ASSO_NAME = process.env.ASSOCIATION_NAME || "Agadir N'Tguida";
-const ASSO_PLACE = process.env.ASSOCIATION_PLACE || "Douar Agadir N'Tguida, Commune de Boutrouch, Caidat de Lakhsass, Province de Sidi Ifni, Region Guelmim-Oued Noun, Maroc";
-const ASSO_EMAIL = process.env.ASSOCIATION_EMAIL || 'agadirnetguida.asso@gmail.com';
-const ASSO_URL = process.env.ASSOCIATION_URL || 'agadirnetguida.com';
+const ASSO_NAME = process.env.ASSOCIATION_NAME || 'Community Organization';
+const ASSO_PLACE = process.env.ASSOCIATION_PLACE || 'Community Location';
+const ASSO_EMAIL = process.env.ASSOCIATION_EMAIL || 'contact@example.com';
+const ASSO_URL = process.env.ASSOCIATION_URL || 'example.com';
 const ASSO_EXTRA = process.env.ASSOCIATION_EXTRA_CONTEXT || '';
 
 const ASSOCIATION_CONTEXT = `
@@ -187,7 +187,7 @@ REFLEXE DONNEES : statistiques_globales pour les chiffres a inclure dans les dos
 
   technique: `${LANG_RULE}
 ${ASSOCIATION_CONTEXT}
-Tu es le conseiller technique de l'application agadirnetguida.com.
+Tu es le conseiller technique de l'application ${ASSO_URL}.
 Tu aides sur la securite, Supabase, Vercel, modules et priorites de correction.
 Tables multi-douars preparees : douars, associations_profils, cooperatives_profils. Routes : /douars, /cooperatives, /rejoindre.
 REFLEXE DONNEES : statistiques_globales pour evaluer la charge (nombre d'utilisateurs, inscriptions, signalements). lister_signalements pour les bugs ou problemes techniques signales par les habitants. Donne des diagnostics precis bases sur l'etat reel du systeme.`,

@@ -1,6 +1,7 @@
 ﻿import type { CommunityContribution } from '../types/contributions';
 
-export const contributionsStorageKey = 'agadirnetguida.contributions.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const contributionsStorageKey = getStorageKey('contributions', 'v1');
 
 export function readContributions(): CommunityContribution[] {
   const stored = localStorage.getItem(contributionsStorageKey);

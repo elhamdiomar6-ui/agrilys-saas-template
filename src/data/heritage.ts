@@ -9,7 +9,8 @@ import type {
 } from '../types/heritage';
 import villageData from './village_data.json';
 
-export const heritageStorageKey = 'agadirnetguida.heritage.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const heritageStorageKey = getStorageKey('heritage', 'v1');
 
 const terrainDraftCreatedAt = '2026-06-01T00:00:00.000Z';
 const heritageImagePaths = new Map(villageData.points_interet.map((item) => [item.id, item.images[0]]));

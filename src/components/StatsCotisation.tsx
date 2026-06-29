@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { getStorageKey, getEventName } from '../lib/storage/storageUtils';
 
 type CotisationStatus = 'a_jour' | 'en_retard' | 'exonere' | 'a_verifier';
 
@@ -14,11 +15,11 @@ type NormalizedFoyerCotisant = {
 };
 
 const preferredStorageKeys = [
-  'agadirnetguida.cotisationImam.v1',
+  getStorageKey('cotisationImam', 'v1'),
   'agadir_cotisations_imam',
 ];
 
-export const statsCotisationUpdatedEvent = 'agadirnetguida:cotisations-imam-updated';
+export const statsCotisationUpdatedEvent = getEventName('cotisations-imam-updated');
 
 function toNumber(value: unknown) {
   if (typeof value === 'number') return Number.isFinite(value) ? value : 0;

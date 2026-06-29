@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { readInternalTasks, saveInternalTasks } from '../data/internalOperations';
 import type { InternalTask } from '../types/internalOperations';
 import InternalOperationsWorkspace, { WorkspaceField, WorkspaceFilter, WorkspaceOption } from './InternalOperationsWorkspace';
@@ -69,7 +70,7 @@ export default function BureauTachesInternesPage({ lang, onBack }: { lang: Lang;
     requiredMessage={{ fr: 'Titre, responsable, statut, priorité, catégorie et prochaine action sont obligatoires.', ar: 'العنوان والمسؤول والحالة والأولوية والصنف والإجراء المقبل ضرورية.' }}
     confirmDelete={{ fr: 'Supprimer cette tâche temporaire ?', ar: 'هل تريد حذف هذه المهمة المؤقتة؟' }}
     scriptId="bureau-taches"
-    filenameBase="agadirnetguida-taches-internes"
+    filenameBase={`${siteConfig.slug}-taches-internes`}
     idPrefix="TASK"
     fields={fields}
     filters={filters}

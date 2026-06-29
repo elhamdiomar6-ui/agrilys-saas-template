@@ -1,6 +1,7 @@
 ﻿import type { CommunityMapPoint } from '../types/communityMap';
 
-export const communityMapStorageKey = 'agadirnetguida.communityMap.v1';
+import { getStorageKey } from '../lib/storage/storageUtils';
+export const communityMapStorageKey = getStorageKey('communityMap', 'v1');
 
 export function readCommunityMapPoints(): CommunityMapPoint[] {
   const stored = localStorage.getItem(communityMapStorageKey);
