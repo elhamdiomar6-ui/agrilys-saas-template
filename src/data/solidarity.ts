@@ -15,7 +15,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-familiale',
     category: 'solidarite',
     status: 'active',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     date: '2026-01-10',
     internalNote: 'Fonds de solidarité géré collectivement. Interventions rapides.',
     published: true,
@@ -31,7 +31,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-sante',
     category: 'sante',
     status: 'active',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     date: '2026-02-15',
     internalNote: 'Partenariat avec infirmière régionale. Campagnes semestrielles.',
     published: true,
@@ -47,7 +47,7 @@ const initialSolidarityActions: SolidarityAction[] = [
     scriptId: 'solidarity-alimentaire',
     category: 'alimentation',
     status: 'preparing',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     date: '2026-05-20',
     internalNote: 'Stock préparé. Distribution prévue avant soudure estivale.',
     published: true,

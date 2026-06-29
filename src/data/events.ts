@@ -18,7 +18,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'reunion',
     status: 'planned',
     importance: 'important',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     internalNote: 'Ordre du jour : gestion de l\'eau, projets de développement, entraide.',
     published: true,
     createdAt: NOW,
@@ -36,7 +36,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'feteLocale',
     status: 'planned',
     importance: 'important',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     internalNote: 'Coordination avec diaspora pour participation à distance.',
     published: true,
     createdAt: NOW,
@@ -54,7 +54,7 @@ const initialEvents: CommunityEvent[] = [
     category: 'nettoyage',
     status: 'planned',
     importance: 'normal',
-    organizer: '' // Client-specific,
+    organizer: '', // Client-specific
     internalNote: 'Implication des familles et des jeunes.',
     published: true,
     createdAt: NOW,

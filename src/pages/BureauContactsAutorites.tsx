@@ -293,7 +293,7 @@ export default function BureauContactsAutoritesPage({ lang, onBack }: { lang: La
   };
 
   const exportJson = () => {
-    downloadText('<SLUG>-contacts-autorites.json', JSON.stringify(contacts, null, 2), 'application/json;charset=utf-8');
+    downloadText('agadirnetguida-contacts-autorites.json', JSON.stringify(contacts, null, 2), 'application/json;charset=utf-8');
   };
 
   const exportCsv = () => {
@@ -314,7 +314,7 @@ export default function BureauContactsAutoritesPage({ lang, onBack }: { lang: La
       contact.nextActionDate,
       contact.notes,
     ].map(csvEscape).join(','));
-    downloadText('<SLUG>-contacts-autorites.csv', [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
+    downloadText('agadirnetguida-contacts-autorites.csv', [header.join(','), ...rows].join('\n'), 'text/csv;charset=utf-8');
   };
 
   return (

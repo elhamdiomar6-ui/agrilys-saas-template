@@ -15,7 +15,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-education',
     category: 'education',
     status: 'active',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     date: '2026-01-20',
     internalNote: 'Bénévoles de la communauté. Séances 2-3 fois par semaine.',
     published: true,
@@ -31,7 +31,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-sport',
     category: 'sport',
     status: 'active',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     date: '2026-02-05',
     internalNote: 'Terrains aménagés du douar. Participation libre et gratuite.',
     published: true,
@@ -47,7 +47,7 @@ const initialYouthInitiatives: YouthInitiative[] = [
     scriptId: 'youth-patrimoine',
     category: 'patrimoine',
     status: 'preparing',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     date: '2026-06-01',
     internalNote: 'Coordination avec les aînés du douar. Début de saison estivale.',
     published: true,

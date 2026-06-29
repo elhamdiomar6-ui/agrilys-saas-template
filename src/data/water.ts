@@ -16,7 +16,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'maintenance',
     status: 'normal',
     date: '2026-04-10',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Cycle d\'entretien trimestriel. Mobilisation familiale.',
     published: true,
     createdAt: NOW,
@@ -32,7 +32,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'qualiteEau',
     status: 'normal',
     date: '2026-01-15',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Tests semestriels avec laboratoire régional.',
     published: true,
     createdAt: NOW,
@@ -48,7 +48,7 @@ const initialWaterInformations: WaterInformation[] = [
     category: 'projetHydraulique',
     status: 'project',
     date: '2026-06-01',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Étude technique et consultation communautaire en cours.',
     published: true,
     createdAt: NOW,

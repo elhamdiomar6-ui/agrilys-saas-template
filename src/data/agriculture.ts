@@ -16,7 +16,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'oliviers',
     status: 'active',
     date: '2026-03-15',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Documentation en cours avec experts régionaux.',
     published: true,
     createdAt: NOW,
@@ -32,7 +32,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'irrigation',
     status: 'active',
     date: '2026-02-10',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Réunions mensuelles de coordination. Respect des droits d\'eau traditionnels.',
     published: true,
     createdAt: NOW,
@@ -48,7 +48,7 @@ const initialAgricultureInitiatives: AgricultureInitiative[] = [
     category: 'reboisement',
     status: 'preparing',
     date: '2026-05-01',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Plans d\'aménagement finalisés. Lancement automne 2026.',
     published: true,
     createdAt: NOW,

@@ -70,36 +70,36 @@ export type PageMediaRow = {
 
 export const agadirHistoryFallback: AgadirHistoryContent = {
   fr: {
-    heritageTitle: "Le <CULTURAL_HERITAGE>,
+    heritageTitle: "Le Grenier Collectif Tguida — patrimoine du douar Agadir N'Tguida",
     heritageParagraphs: [
-      "Le <CULTURAL_HERITAGE>. Sa gestion, sa préservation et toute valorisation touristique relèvent de la responsabilité de la communauté et de l'Association <COMMUNITY_NAME> pour le Développement et la Coopération (<ORGANIZATION_NAME>), seule structure légalement constituée pour représenter les habitants du douar sur ce patrimoine.",
-      "Le <CULTURAL_HERITAGE>. Selon la tradition orale locale, sa construction remonte à plus de quatre siècles. Il fut bâti et utilisé par les tribus Majjat Ait Moussa pour conserver les céréales et les biens précieux de la communauté, mais aussi comme refuge sûr lors des conflits qui pouvaient éclater entre tribus.",
-      "Il se distingue des autres <CULTURAL_HERITAGE>, une caractéristique relevée par les services régionaux du patrimoine culturel.",
+      "Le Grenier Collectif (Agadir) Tguida appartient au douar Agadir N'Tguida et à ses habitants. Sa gestion, sa préservation et toute valorisation touristique relèvent de la responsabilité de la communauté et de l'Association Agadir N'Tguida pour le Développement et la Coopération (ANATDC), seule structure légalement constituée pour représenter les habitants du douar sur ce patrimoine.",
+      "Le Grenier est l'un des plus de cinquante forts et greniers collectifs historiques recensés dans la région de Boutrouch et ses environs. Selon la tradition orale locale, sa construction remonte à plus de quatre siècles. Il fut bâti et utilisé par les tribus Majjat Ait Moussa pour conserver les céréales et les biens précieux de la communauté, mais aussi comme refuge sûr lors des conflits qui pouvaient éclater entre tribus.",
+      "Il se distingue des autres greniers de la région par sa forme circulaire particulière, une caractéristique relevée par les services régionaux du patrimoine culturel.",
     ],
     recognitionTitle: 'Une reconnaissance officielle récente',
     recognitionParagraphs: [
-      "En 2026, un décret gouvernemental a officiellement inscrit le <CULTURAL_HERITAGE>.",
-      "Ce classement place désormais le <CULTURAL_HERITAGE>.",
+      "En 2026, un décret gouvernemental a officiellement inscrit le Grenier Collectif Agadir N'Tguida sur la liste des monuments historiques nationaux du Maroc.",
+      "Ce classement place désormais le Grenier sous la protection de la loi relative aux monuments historiques : toute modification de sa structure ou de son apparence nécessite une autorisation préalable du ministère compétent — une garantie supplémentaire pour la préservation de ce lieu pour les générations futures.",
     ],
     ownershipTitle: 'Responsabilité communautaire et représentation',
-    ownershipText: "Cette reconnaissance officielle ne transfère aucun droit de gestion, d'exploitation touristique ou de représentation à un tiers. Toute initiative de visite, d'excursion ou de valorisation touristique du <CULTURAL_HERITAGE>. L'association rappelle qu'elle est l'unique structure habilitée à représenter la communauté d'<COMMUNITY_NAME> sur les questions liées à ce patrimoine, et qu'aucune organisation extérieure au douar n'est autorisée à organiser des visites ou des activités sur le site sans ce consentement.",
+    ownershipText: "Cette reconnaissance officielle ne transfère aucun droit de gestion, d'exploitation touristique ou de représentation à un tiers. Toute initiative de visite, d'excursion ou de valorisation touristique du Grenier doit recevoir l'accord préalable des habitants du douar et de l'ANATDC. L'association rappelle qu'elle est l'unique structure habilitée à représenter la communauté d'Agadir N'Tguida sur les questions liées à ce patrimoine, et qu'aucune organisation extérieure au douar n'est autorisée à organiser des visites ou des activités sur le site sans ce consentement.",
     territoryTitle: 'Le territoire et son histoire',
-    territoryText: "Le douar <COMMUNITY_NAME> se situe dans la zone tribale de Lakhsass, voisine de la confédération Ait Baamrane, dont la ville de Sidi Ifni fut historiquement la capitale. Cette région a connu une histoire marquée par la résistance : les tribus Ait Baamrane se sont opposées successivement à la présence coloniale française puis espagnole au cours du XXe siècle, jusqu'à la libération de Sidi Ifni le 30 juin 1969 — une date commémorée chaque année au Maroc.",
-    timelineTitle: "Repères de l'histoire d'<COMMUNITY_NAME>",
+    territoryText: "Le douar Agadir N'Tguida se situe dans la zone tribale de Lakhsass, voisine de la confédération Ait Baamrane, dont la ville de Sidi Ifni fut historiquement la capitale. Cette région a connu une histoire marquée par la résistance : les tribus Ait Baamrane se sont opposées successivement à la présence coloniale française puis espagnole au cours du XXe siècle, jusqu'à la libération de Sidi Ifni le 30 juin 1969 — une date commémorée chaque année au Maroc.",
+    timelineTitle: "Repères de l'histoire d'Agadir N'Tguida",
     timeline: [
-      { id: 'construction-<CULTURAL_HERITAGE>, period: 'Il y a plus de quatre siècles', title: 'Construction du <CULTURAL_HERITAGE>, text: 'Selon la tradition orale locale, les tribus Majjat Ait Moussa bâtissent le <CULTURAL_HERITAGE>, et servir de refuge sûr.' },
+      { id: 'construction-grenier', period: 'Il y a plus de quatre siècles', title: 'Construction du Grenier Collectif Tguida', text: 'Selon la tradition orale locale, les tribus Majjat Ait Moussa bâtissent le Grenier pour conserver les céréales et les biens précieux de la communauté, et servir de refuge sûr.' },
       { id: 'resistance-xxe', period: 'XXe siècle', title: 'Une région marquée par la résistance', text: 'Les tribus Ait Baamrane s’opposent successivement aux présences coloniales française puis espagnole.' },
       { id: 'liberation-sidi-ifni', period: '30 juin 1969', title: 'Libération de Sidi Ifni', text: 'La libération de Sidi Ifni devient une date historique commémorée chaque année au Maroc.' },
-      { id: 'classement-2026', period: '2026', title: 'Classement comme monument historique national', text: "Un décret gouvernemental inscrit officiellement le <CULTURAL_HERITAGE>." },
+      { id: 'classement-2026', period: '2026', title: 'Classement comme monument historique national', text: "Un décret gouvernemental inscrit officiellement le Grenier Collectif Agadir N'Tguida sur la liste des monuments historiques nationaux du Maroc." },
     ],
     aboutTitle: 'Une communauté, un territoire et un patrimoine',
-    aboutText: "<COMMUNITY_NAME> appartient à la zone tribale de Lakhsass, voisine de la confédération Ait Baamrane. Son histoire locale est notamment portée par le <CULTURAL_HERITAGE>, construit il y a plus de quatre siècles selon la tradition orale et classé monument historique national en 2026.",
-    aboutAssociation: "L'<ORGANIZATION_NAME> assure la représentation des habitants du douar pour la préservation et la valorisation de ce patrimoine. Toute initiative concernant le <CULTURAL_HERITAGE>.",
+    aboutText: "Agadir N'Tguida appartient à la zone tribale de Lakhsass, voisine de la confédération Ait Baamrane. Son histoire locale est notamment portée par le Grenier Collectif Tguida, construit il y a plus de quatre siècles selon la tradition orale et classé monument historique national en 2026.",
+    aboutAssociation: "L'ANATDC assure la représentation des habitants du douar pour la préservation et la valorisation de ce patrimoine. Toute initiative concernant le Grenier doit être menée avec l'accord préalable de la communauté et de l'association.",
   },
   ar: {
     heritageTitle: 'الغرنية الجماعية تيكيدا — تراث دوار أگادير نتگيدا',
     heritageParagraphs: [
-      'تنتمي الغرنية الجماعية (أگادير) تيكيدا لدوار أگادير نتگيدا وساكنته. وتعود مسؤولية تدبيرها والحفاظ عليها وأي تثمين سياحي لها إلى الجماعة المحلية وإلى جمعية أگادير نتگيدا للتنمية والتعاون (<ORGANIZATION_NAME>)، وهي الهيكل القانوني الوحيد المؤهل لتمثيل ساكنة الدوار في كل ما يتعلق بهذا التراث.',
+      'تنتمي الغرنية الجماعية (أگادير) تيكيدا لدوار أگادير نتگيدا وساكنته. وتعود مسؤولية تدبيرها والحفاظ عليها وأي تثمين سياحي لها إلى الجماعة المحلية وإلى جمعية أگادير نتگيدا للتنمية والتعاون (ANATDC)، وهي الهيكل القانوني الوحيد المؤهل لتمثيل ساكنة الدوار في كل ما يتعلق بهذا التراث.',
       'تُعد الغرنية واحدة من أكثر من خمسين حصنًا ومخزنًا جماعيًا تاريخيًا تم رصدها في منطقة بوطروش وما حولها. وحسب الرواية الشفوية المحلية، يعود تشييدها إلى أكثر من أربعة قرون. شيدتها واستعملتها قبائل مجاط آيت موسى لحفظ الحبوب والممتلكات الثمينة للجماعة، وكذلك كملاذ آمن أثناء النزاعات التي كانت تنشب بين القبائل.',
       'تتميز هذه المعلمة عن باقي الغرنيات في المنطقة بشكلها الدائري الخاص، وهي خصوصية أكدتها المصالح الجهوية المكلفة بالتراث الثقافي.',
     ],
@@ -109,19 +109,19 @@ export const agadirHistoryFallback: AgadirHistoryContent = {
       'ويضع هذا التصنيف الغرنية تحت حماية القانون المتعلق بالمباني التاريخية: أصبح أي تغيير في بنيتها أو شكلها العام يستوجب ترخيصًا مسبقًا من الوزارة المختصة، وهو ضمان إضافي للحفاظ على هذا المكان للأجيال القادمة.',
     ],
     ownershipTitle: 'المسؤولية الجماعية والتمثيل',
-    ownershipText: 'هذا التصنيف الرسمي لا يمنح أي جهة خارجية حق التدبير أو الاستغلال السياحي أو التمثيل. كل مبادرة لزيارة الغرنية أو تنظيم خرجات أو أنشطة سياحية بها يجب أن تحصل على موافقة مسبقة من ساكنة الدوار ومن جمعية <ORGANIZATION_NAME>. وتؤكد الجمعية أنها الهيكل الوحيد المؤهل لتمثيل ساكنة دوار أگادير نتگيدا في كل ما يخص هذا التراث، وأنه لا يحق لأي جهة من خارج الدوار تنظيم زيارات أو أنشطة بالموقع دون هذه الموافقة.',
+    ownershipText: 'هذا التصنيف الرسمي لا يمنح أي جهة خارجية حق التدبير أو الاستغلال السياحي أو التمثيل. كل مبادرة لزيارة الغرنية أو تنظيم خرجات أو أنشطة سياحية بها يجب أن تحصل على موافقة مسبقة من ساكنة الدوار ومن جمعية ANATDC. وتؤكد الجمعية أنها الهيكل الوحيد المؤهل لتمثيل ساكنة دوار أگادير نتگيدا في كل ما يخص هذا التراث، وأنه لا يحق لأي جهة من خارج الدوار تنظيم زيارات أو أنشطة بالموقع دون هذه الموافقة.',
     territoryTitle: 'التراب وتاريخه',
     territoryText: 'يقع دوار أگادير نتگيدا في منطقة قبيلة لخصاص، المجاورة لاتحاد قبائل آيت باعمران، التي كانت مدينة سيدي إفني حاضرتها التاريخية. شهدت هذه المنطقة تاريخًا حافلًا بالمقاومة: واجهت قبائل آيت باعمران الوجود الاستعماري الفرنسي ثم الإسباني على التوالي خلال القرن العشرين، إلى أن تم تحرير سيدي إفني في 30 يونيو 1969 — تاريخ يُخلَّد كل سنة في المغرب.',
     timelineTitle: 'محطات من تاريخ أگادير نتگيدا',
     timeline: [
-      { id: 'construction-<CULTURAL_HERITAGE>, period: 'منذ أكثر من أربعة قرون', title: 'تشييد الغرنية الجماعية تيكيدا', text: 'حسب الرواية الشفوية المحلية، شيدت قبائل مجاط آيت موسى الغرنية لحفظ حبوب الجماعة وممتلكاتها الثمينة، ولتكون ملاذًا آمنًا.' },
+      { id: 'construction-grenier', period: 'منذ أكثر من أربعة قرون', title: 'تشييد الغرنية الجماعية تيكيدا', text: 'حسب الرواية الشفوية المحلية، شيدت قبائل مجاط آيت موسى الغرنية لحفظ حبوب الجماعة وممتلكاتها الثمينة، ولتكون ملاذًا آمنًا.' },
       { id: 'resistance-xxe', period: 'القرن العشرون', title: 'منطقة طبعتها المقاومة', text: 'واجهت قبائل آيت باعمران الوجود الاستعماري الفرنسي ثم الإسباني.' },
       { id: 'liberation-sidi-ifni', period: '30 يونيو 1969', title: 'تحرير سيدي إفني', text: 'أصبح تحرير سيدي إفني تاريخًا وطنيًا يُخلَّد كل سنة في المغرب.' },
       { id: 'classement-2026', period: '2026', title: 'التصنيف ضمن الآثار التاريخية الوطنية', text: 'أدرج مرسوم حكومي الغرنية الجماعية أگادير نتگيدا رسميًا ضمن لائحة الآثار التاريخية الوطنية بالمغرب.' },
     ],
     aboutTitle: 'جماعة وتراب وتراث',
     aboutText: 'ينتمي دوار أگادير نتگيدا إلى منطقة قبيلة لخصاص المجاورة لاتحاد قبائل آيت باعمران. وتحمل الغرنية الجماعية تيكيدا جزءًا مهمًا من تاريخه المحلي؛ إذ يعود بناؤها، حسب الرواية الشفوية، إلى أكثر من أربعة قرون، وصُنفت معلمة تاريخية وطنية سنة 2026.',
-    aboutAssociation: 'تتولى جمعية <ORGANIZATION_NAME> تمثيل ساكنة الدوار في ما يتعلق بالحفاظ على هذا التراث وتثمينه. ويجب أن تتم كل مبادرة تخص الغرنية بعد الموافقة المسبقة للجماعة المحلية والجمعية.',
+    aboutAssociation: 'تتولى جمعية ANATDC تمثيل ساكنة الدوار في ما يتعلق بالحفاظ على هذا التراث وتثمينه. ويجب أن تتم كل مبادرة تخص الغرنية بعد الموافقة المسبقة للجماعة المحلية والجمعية.',
   },
 };
 
@@ -133,7 +133,7 @@ export const editorialPages: EditorialPageDefinition[] = [
     audioScriptId: 'carte-patrimoine',
     sections: [
       { id: 'heritageTitle', label: 'Titre principal', type: 'text' },
-      { id: 'heritageParagraphs', label: 'Présentation du <CULTURAL_HERITAGE>, type: 'array' },
+      { id: 'heritageParagraphs', label: 'Présentation du Grenier', type: 'array' },
       { id: 'recognitionTitle', label: 'Titre de la reconnaissance', type: 'text' },
       { id: 'recognitionParagraphs', label: 'Reconnaissance officielle', type: 'array' },
       { id: 'ownershipTitle', label: 'Titre de la responsabilité', type: 'text' },
@@ -160,7 +160,7 @@ export const editorialPages: EditorialPageDefinition[] = [
     sections: [
       { id: 'aboutTitle', label: 'Titre historique', type: 'text' },
       { id: 'aboutText', label: 'Présentation historique', type: 'text' },
-      { id: 'aboutAssociation', label: 'Rôle de l’<ORGANIZATION_NAME>', type: 'text' },
+      { id: 'aboutAssociation', label: 'Rôle de l’ANATDC', type: 'text' },
     ],
   },
 ];

@@ -16,7 +16,7 @@ const initialCooperativeInitiatives: CooperativeInitiative[] = [
     category: 'produitsTerroir',
     status: 'active',
     date: '2025-09-15',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Partenariat avec les femmes du douar pour production et emballage.',
     published: true,
     createdAt: NOW,
@@ -32,7 +32,7 @@ const initialCooperativeInitiatives: CooperativeInitiative[] = [
     category: 'artisanat',
     status: 'development',
     date: '2026-04-20',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Formation en cours pour les jeunes artisans du douar.',
     published: true,
     createdAt: NOW,
@@ -48,7 +48,7 @@ const initialCooperativeInitiatives: CooperativeInitiative[] = [
     category: 'elevage',
     status: 'active',
     date: '2025-07-10',
-    responsible: '' // Client-specific,
+    responsible: '', // Client-specific
     internalNote: 'Partenariat avec vétérinaire régional pour suivi sanitaire.',
     published: true,
     createdAt: NOW,
